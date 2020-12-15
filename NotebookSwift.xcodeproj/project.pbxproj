@@ -14,6 +14,7 @@
 		2CD92CCE25890CAD00F85BE7 /* NotebookSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CD92CCC25890CAD00F85BE7 /* NotebookSwift.xcdatamodeld */; };
 		2CD92CD025890CAF00F85BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD92CCF25890CAF00F85BE7 /* Assets.xcassets */; };
 		2CD92CD325890CAF00F85BE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD92CD125890CAF00F85BE7 /* LaunchScreen.storyboard */; };
+		2CD92CDD25890DC400F85BE7 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD92CDC25890DC400F85BE7 /* NoteTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2CD92CCF25890CAF00F85BE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CD92CD225890CAF00F85BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CD92CD425890CAF00F85BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD92CDC25890DC400F85BE7 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				2CD92CC325890CAD00F85BE7 /* AppDelegate.swift */,
 				2CD92CC525890CAD00F85BE7 /* SceneDelegate.swift */,
+				2CD92CDC25890DC400F85BE7 /* NoteTableViewController.swift */,
 				2CD92CC725890CAD00F85BE7 /* ViewController.swift */,
 				2CD92CC925890CAD00F85BE7 /* Main.storyboard */,
 				2CD92CCF25890CAF00F85BE7 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD92CDD25890DC400F85BE7 /* NoteTableViewController.swift in Sources */,
 				2CD92CCE25890CAD00F85BE7 /* NotebookSwift.xcdatamodeld in Sources */,
 				2CD92CC825890CAD00F85BE7 /* ViewController.swift in Sources */,
 				2CD92CC425890CAD00F85BE7 /* AppDelegate.swift in Sources */,
@@ -300,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.SergeyGolenko.MyLocationsApp.NotebookSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.SergeyGolenko.MyLocationsApp.NotebookSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

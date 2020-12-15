@@ -8,10 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+    
+    @IBOutlet weak var newTextForNotebook: UITextView!
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        newTextForNotebook.text = "gfgdgdg"
     }
 
 
