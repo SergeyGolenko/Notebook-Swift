@@ -68,6 +68,9 @@
                                     <constraint firstAttribute="width" constant="300" id="8Oo-7n-WYb"/>
                                     <constraint firstAttribute="height" constant="200" id="ULm-oC-CiJ"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="dateChanched:" destination="BYZ-38-t0r" eventType="valueChanged" id="Q75-If-JnF"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -90,6 +93,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="constraintText" destination="6uY-BS-h0J" id="MDz-9K-eQQ"/>
                         <outlet property="newTextForNotebook" destination="S94-n8-xF7" id="Xwv-ab-0bD"/>
                         <outlet property="newTimeForNotebook" destination="Pm8-6Z-Sf9" id="0b3-JT-nzy"/>
                     </connections>
