@@ -17,6 +17,7 @@
 		2CD92CDD25890DC400F85BE7 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD92CDC25890DC400F85BE7 /* NoteTableViewController.swift */; };
 		2CD92CE6258A215000F85BE7 /* Entries+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD92CE4258A215000F85BE7 /* Entries+CoreDataClass.swift */; };
 		2CD92CE7258A215000F85BE7 /* Entries+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD92CE5258A215000F85BE7 /* Entries+CoreDataProperties.swift */; };
+		2CD92CEA258A825E00F85BE7 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD92CE9258A825E00F85BE7 /* CustomCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2CD92CDC25890DC400F85BE7 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 		2CD92CE4258A215000F85BE7 /* Entries+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entries+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2CD92CE5258A215000F85BE7 /* Entries+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entries+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CD92CE9258A825E00F85BE7 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				2CD92CDC25890DC400F85BE7 /* NoteTableViewController.swift */,
 				2CD92CC725890CAD00F85BE7 /* ViewController.swift */,
 				2CD92CC925890CAD00F85BE7 /* Main.storyboard */,
+				2CD92CE9258A825E00F85BE7 /* CustomCellTableViewCell.swift */,
 				2CD92CCF25890CAF00F85BE7 /* Assets.xcassets */,
 				2CD92CD125890CAF00F85BE7 /* LaunchScreen.storyboard */,
 				2CD92CD425890CAF00F85BE7 /* Info.plist */,
@@ -155,6 +158,7 @@
 				2CD92CC825890CAD00F85BE7 /* ViewController.swift in Sources */,
 				2CD92CC425890CAD00F85BE7 /* AppDelegate.swift in Sources */,
 				2CD92CE6258A215000F85BE7 /* Entries+CoreDataClass.swift in Sources */,
+				2CD92CEA258A825E00F85BE7 /* CustomCellTableViewCell.swift in Sources */,
 				2CD92CC625890CAD00F85BE7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
