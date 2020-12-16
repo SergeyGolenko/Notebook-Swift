@@ -32,7 +32,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="P3C-Yk-fhC">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ura-J9-Nrd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="Ura-J9-Nrd">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="jxz-nc-bTi"/>
                             </connections>
@@ -52,31 +52,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S94-n8-xF7">
-                                <rect key="frame" x="0.0" y="138" width="414" height="674"/>
+                                <rect key="frame" x="0.0" y="374" width="414" height="438"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pm8-6Z-Sf9">
+                                <rect key="frame" x="10" y="108" width="394" height="216"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="S94-n8-xF7" firstAttribute="top" secondItem="Pm8-6Z-Sf9" secondAttribute="bottom" constant="50" id="Ei1-72-Lwu"/>
                             <constraint firstItem="S94-n8-xF7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IcH-7L-gxk"/>
+                            <constraint firstItem="Pm8-6Z-Sf9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Zk6-pe-qoE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pm8-6Z-Sf9" secondAttribute="trailing" constant="10" id="ec9-21-361"/>
+                            <constraint firstItem="Pm8-6Z-Sf9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hub-SW-Fi2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S94-n8-xF7" secondAttribute="bottom" constant="50" id="r51-OC-swA"/>
-                            <constraint firstItem="S94-n8-xF7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="uFc-5p-cOj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S94-n8-xF7" secondAttribute="trailing" id="v3b-sF-Lkb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PEa-hA-NQh"/>
                     <connections>
                         <outlet property="newTextForNotebook" destination="S94-n8-xF7" id="Xwv-ab-0bD"/>
+                        <outlet property="newTimeForNotebook" destination="Pm8-6Z-Sf9" id="0b3-JT-nzy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="153"/>
+            <point key="canvasLocation" x="894" y="153"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r0q-YP-xLH">

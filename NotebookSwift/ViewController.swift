@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     
     
+    @IBOutlet weak var newTimeForNotebook: UIDatePicker!
     @IBOutlet weak var newTextForNotebook: UITextView!
     
     
