@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var firstVC : NoteTableViewController?
+    var newTask = Entries()
+    
     
     
     
@@ -21,7 +24,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        newTextForNotebook.text = "gfgdgdg"
+        newTextForNotebook.text = ""
+            }
+    
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        newTask.text = newTextForNotebook.text
+        newTask.date = newTimeForNotebook.date
+        firstVC?.entriesArray.append(newTask)
+        firstVC?.tableView.reloadData()
+        
     }
 
 

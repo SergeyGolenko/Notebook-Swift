@@ -15,6 +15,7 @@
 		2CD92CD025890CAF00F85BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD92CCF25890CAF00F85BE7 /* Assets.xcassets */; };
 		2CD92CD325890CAF00F85BE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD92CD125890CAF00F85BE7 /* LaunchScreen.storyboard */; };
 		2CD92CDD25890DC400F85BE7 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD92CDC25890DC400F85BE7 /* NoteTableViewController.swift */; };
+		2CD92CE1258A15AA00F85BE7 /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD92CE0258A15AA00F85BE7 /* Entries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2CD92CD225890CAF00F85BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CD92CD425890CAF00F85BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CD92CDC25890DC400F85BE7 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
+		2CD92CE0258A15AA00F85BE7 /* Entries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2CD92CC325890CAD00F85BE7 /* AppDelegate.swift */,
 				2CD92CC525890CAD00F85BE7 /* SceneDelegate.swift */,
 				2CD92CDC25890DC400F85BE7 /* NoteTableViewController.swift */,
+				2CD92CE0258A15AA00F85BE7 /* Entries.swift */,
 				2CD92CC725890CAD00F85BE7 /* ViewController.swift */,
 				2CD92CC925890CAD00F85BE7 /* Main.storyboard */,
 				2CD92CCF25890CAF00F85BE7 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD92CE1258A15AA00F85BE7 /* Entries.swift in Sources */,
 				2CD92CDD25890DC400F85BE7 /* NoteTableViewController.swift in Sources */,
 				2CD92CCE25890CAD00F85BE7 /* NotebookSwift.xcdatamodeld in Sources */,
 				2CD92CC825890CAD00F85BE7 /* ViewController.swift in Sources */,
