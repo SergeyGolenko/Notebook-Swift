@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    var newTask = Entries()
+   
     
     
     
@@ -36,6 +36,7 @@ class ViewController: UIViewController {
             let newTask = Entries(context: context)
             newTask.text = newTextForNotebook.text
             newTask.date = newTimeForNotebook.date
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
         }
 
 

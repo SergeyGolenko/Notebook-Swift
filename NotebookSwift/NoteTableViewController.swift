@@ -9,7 +9,7 @@ import UIKit
 
 class NoteTableViewController: UITableViewController {
     
-    var entriesArray = [Entries]()
+    var entriesArray : [Entries] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,10 @@ class NoteTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
             
+            if let entriesFromCoreData =  try? context.fetch(Entries.fetchRequest()) as? [Entries] {
+                entriesArray = entriesFromCoreData
+                self.tableView.reloadData()
+            }
         }
     }
     
