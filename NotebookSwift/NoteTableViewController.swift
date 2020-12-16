@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class NoteTableViewController: UITableViewController {
     
@@ -19,7 +20,10 @@ class NoteTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
             
-            if let entriesFromCoreData =  try? context.fetch(Entries.fetchRequest()) as? [Entries] {
+            let request : NSFetchRequest<Entries> = Entries.fetchRequest()
+            request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
+            
+            if let entriesFromCoreData =  try? context.fetch(request) {
                 entriesArray = entriesFromCoreData
                 self.tableView.reloadData()
             }
