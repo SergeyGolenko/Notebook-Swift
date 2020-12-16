@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var firstVC : NoteTableViewController?
+    
     var newTask = Entries()
     
     
@@ -30,13 +30,15 @@ class ViewController: UIViewController {
     
     
     override func viewWillDisappear(_ animated: Bool) {
-        newTask.text = newTextForNotebook.text
-        newTask.date = newTimeForNotebook.date
-        firstVC?.entriesArray.append(newTask)
-        firstVC?.tableView.reloadData()
-        
-    }
+        //Make an entry
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let newTask = Entries(context: context)
+            newTask.text = newTextForNotebook.text
+            newTask.date = newTimeForNotebook.date
+        }
 
 
 }
 
+}

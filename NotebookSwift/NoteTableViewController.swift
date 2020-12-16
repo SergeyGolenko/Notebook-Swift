@@ -15,6 +15,12 @@ class NoteTableViewController: UITableViewController {
         super.viewDidLoad()
     }
 
+    //Эта функция срабатывает при каждом появлении этого контроллера
+    override func viewWillAppear(_ animated: Bool) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+            
+        }
+    }
     
     
     // MARK: - Table view data source
@@ -37,7 +43,7 @@ class NoteTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let secondVC = segue.destination as? ViewController{
-            secondVC.firstVC = self
+          
         }
     }
 
