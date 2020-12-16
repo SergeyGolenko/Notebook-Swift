@@ -39,10 +39,10 @@ class NoteTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        let item = entriesArray[indexPath.row].text
-        cell.textLabel?.text = item
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellCustom", for: indexPath) as? CustomCellTableViewCell
+        let item = entriesArray[indexPath.row]
+        cell?.myTextLabel.text = item.text
+        return cell!
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
