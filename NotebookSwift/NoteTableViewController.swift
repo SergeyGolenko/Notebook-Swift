@@ -42,6 +42,8 @@ class NoteTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellCustom", for: indexPath) as? CustomCellTableViewCell
         let item = entriesArray[indexPath.row]
         cell?.myTextLabel.text = item.text
+        cell?.mounthDate.text = item.month()
+        cell?.numberDate.text = item.day()
         return cell!
     }
     
