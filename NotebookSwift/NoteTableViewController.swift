@@ -47,8 +47,16 @@ class NoteTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let secondVC = segue.destination as? ViewController{
-          
+            if let entryToBeSent = sender as? Entries {
+                secondVC.entry = entryToBeSent
+            }
         }
+    }
+    
+    //MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let entry = entriesArray[indexPath.row]
+         performSegue(withIdentifier:"111", sender: entry)
     }
 
 }

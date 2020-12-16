@@ -34,10 +34,13 @@
                     <navigationItem key="navigationItem" id="P3C-Yk-fhC">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="Ura-J9-Nrd">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="jxz-nc-bTi"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="111" id="jxz-nc-bTi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="111" id="Zna-SF-csy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9r-3R-fRT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +81,14 @@
                             <constraint firstItem="Pm8-6Z-Sf9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vjU-cO-3wS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PEa-hA-NQh"/>
+                    <navigationItem key="navigationItem" id="PEa-hA-NQh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="XQ1-F3-VZY">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                            <connections>
+                                <action selector="trashButton:" destination="BYZ-38-t0r" id="6hS-b4-eGz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="newTextForNotebook" destination="S94-n8-xF7" id="Xwv-ab-0bD"/>
                         <outlet property="newTimeForNotebook" destination="Pm8-6Z-Sf9" id="0b3-JT-nzy"/>
@@ -107,12 +117,18 @@
             <point key="canvasLocation" x="-991.304347826087" y="152.67857142857142"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Zna-SF-csy"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
